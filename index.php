@@ -28,7 +28,7 @@
             ?>
 
             <div class="card-body user-card">
-                <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
+                <form  method="POST" id="frmSubmit">
                     <div class="row">
                         <div class="col-lg-6 intext">Name : </div>
                         <div class="col-lg-6"><input type="text" name="nameuser" id="" class="form-control" placeholder="Name" required></div>
@@ -64,6 +64,50 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+    <script>
+
+        jQuery('#frmSubmit').on('submit', function(e) {
+            e.preventDefault();
+            jQuery('#msg').html('Please wait...');
+            jQuery('#btnSubmit').attr('disabled', true);
+            jQuery.ajax({
+                url: 'https://script.google.com/macros/s/AKfycbx_flOSjRU9FxHJUQsoML21a_lD3lKsZ2NuL93eGUEUhFgcdk7HsLSj41jOCdh42oMsvg/exec',
+
+                type: 'post',
+                data: jQuery('#frmSubmit').serialize(),
+
+                success: function(result) {
+
+                    resend();
+
+                }
+            });
+        });
+
+        function resend() {
+            jQuery.ajax({
+                url: 'function/function.php',
+                type: 'post',
+
+                data: jQuery('#frmSubmit').serialize(),
+                success: function(result) {
+
+                    jQuery('#frmSubmit')[0].reset();
+
+                    jQuery('#msg').html(result);
+
+                    jQuery('#btnSubmit').attr('disabled', false);
+
+                    //window.location.href='';
+                }
+
+            });
+
+        }
+
+    </script>
+
 </body>
 
 </html>
