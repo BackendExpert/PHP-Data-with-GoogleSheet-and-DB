@@ -12,7 +12,7 @@
 
 <body>
 
-    <?php include("../function/function.php"); ?>
+    <?php include("functions/function.php"); ?>
 
     <div class="container main-page">
         <div class="card">
