@@ -19,7 +19,10 @@
             </div>
             <div class="card-body">
                 <form action="" method="post">
-                    
+                    <div class="row">
+                        <div class="col-lg-6">Name : </div>
+                        <div class="col-lg-6"></div>
+                    </div>
                 </form>
             </div>
             <div class="card-footer">
