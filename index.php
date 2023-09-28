@@ -20,10 +20,9 @@
 
             <?php 
                 if(isset($_POST['submit_data'])){
-                    $result = add_user($_POST['facebook'],$_POST['whatsapp'],$_POST['linkedin'],$_POST['gitHub'],$_POST['instagram']);
+                    $result = add_user($_POST['nameuser'],$_POST['emailuser'],$_POST['mobile'],$_POST['address']);
                     echo $result;
-                }
-            
+                }            
             ?>
 
             <div class="card-body user-card">
@@ -42,7 +41,7 @@
                     </div><br>
                     <div class="row">
                         <div class="col-lg-6 intext">Address: </div>
-                        <div class="col-lg-6"><textarea name="" class="form-control form-address" placeholder="Address" required></textarea></div>
+                        <div class="col-lg-6"><textarea name="address" class="form-control form-address" placeholder="Address" required></textarea></div>
                     </div><br>
                     <div class="row">
                         <div class="col-lg-5">
