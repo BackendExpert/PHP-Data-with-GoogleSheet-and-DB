@@ -17,6 +17,14 @@
             <div class="card-header">
                 <h3>Data Send to GSheet and DB</h3>
             </div>
+
+            <?php 
+                if(isset($_POST['submit_data'])){
+                    
+                }
+            
+            ?>
+
             <div class="card-body user-card">
                 <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
                     <div class="row">
@@ -41,7 +49,7 @@
                         </div>
                         <div class="col-lg-2"></div>
                         <div class="col-lg-5">
-                            <input type="submit" value="Submit Data" class="btn btn-success btn-form">
+                            <input type="submit" value="Submit Data" class="btn btn-success btn-form" name="submit_data">
                         </div>
                     </div>
                 </form>
