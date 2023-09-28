@@ -37,11 +37,11 @@
                     </div><br>
                     <div class="row">
                         <div class="col-lg-5">
-                            <input type="reset" value="Clear" class="btn btn-secondary">
+                            <input type="reset" value="Clear" class="btn btn-secondary btn-form">
                         </div>
                         <div class="col-lg-2"></div>
                         <div class="col-lg-5">
-                            <input type="submit" value="Submit Data" class="btn btn-success">
+                            <input type="submit" value="Submit Data" class="btn btn-success btn-form">
                         </div>
                     </div>
                 </form>
