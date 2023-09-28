@@ -20,7 +20,8 @@
 
             <?php 
                 if(isset($_POST['submit_data'])){
-                    
+                    $result = add_user($_POST['facebook'],$_POST['whatsapp'],$_POST['linkedin'],$_POST['gitHub'],$_POST['instagram']);
+                    echo $result;
                 }
             
             ?>
