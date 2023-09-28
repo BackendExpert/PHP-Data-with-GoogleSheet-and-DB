@@ -12,7 +12,7 @@
 
 <body>
 
-    <?php include("functions/function.php"); ?>
+    <?php //include("functions/function.php"); ?>
 
     <div class="container main-page">
         <div class="card">
@@ -21,10 +21,10 @@
             </div>
 
             <?php 
-                if(isset($_POST['submit_data'])){
-                    $result = add_user($_POST['nameuser'],$_POST['emailuser'],$_POST['mobile'],$_POST['address']);
-                    echo $result;
-                }            
+                // if(isset($_POST['submit_data'])){
+                //     $result = add_user($_POST['nameuser'],$_POST['emailuser'],$_POST['mobile'],$_POST['address']);
+                //     echo $result;
+                // }            
             ?>
 
             <div class="card-body user-card">
@@ -64,49 +64,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-
-    <script>
-
-        jQuery('#frmSubmit').on('submit', function(e) {
-            e.preventDefault();
-            jQuery('#msg').html('Please wait...');
-            jQuery('#btnSubmit').attr('disabled', true);
-            jQuery.ajax({
-                url: 'https://script.google.com/macros/s/AKfycbx_flOSjRU9FxHJUQsoML21a_lD3lKsZ2NuL93eGUEUhFgcdk7HsLSj41jOCdh42oMsvg/exec',
-
-                type: 'post',
-                data: jQuery('#frmSubmit').serialize(),
-
-                success: function(result) {
-
-                    resend();
-
-                }
-            });
-        });
-
-        function resend() {
-            jQuery.ajax({
-                url: 'function/function.php',
-                type: 'post',
-
-                data: jQuery('#frmSubmit').serialize(),
-                success: function(result) {
-
-                    jQuery('#frmSubmit')[0].reset();
-
-                    jQuery('#msg').html(result);
-
-                    jQuery('#btnSubmit').attr('disabled', false);
-
-                    //window.location.href='';
-                }
-
-            });
-
-        }
-
-    </script>
 
 </body>
 
