@@ -13,7 +13,7 @@
         echo $mobile;
         echo $address;
 
-
+        $insert = "INSERT INTO user_tbl(user_name,user_email,user_mobile,user_address,)"
 
     }
 

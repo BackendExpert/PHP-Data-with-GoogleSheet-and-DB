@@ -28,7 +28,7 @@
             ?>
 
             <div class="card-body user-card">
-                <form method="POST" action="https://script.google.com/macros/s/AKfycbx_flOSjRU9FxHJUQsoML21a_lD3lKsZ2NuL93eGUEUhFgcdk7HsLSj41jOCdh42oMsvg/exec">
+                <form method="POST" action="<?php echo($_SERVER['PHP_SELF']); ?>">
                     <div class="row">
                         <div class="col-lg-6 intext">Name : </div>
                         <div class="col-lg-6"><input type="text" name="nameuser" id="" class="form-control" placeholder="Name" required></div>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-lg-2"></div>
                         <div class="col-lg-5">
-                            <input type="submit" value="Submit Data" class="btn btn-success btn-form" name="submit_data">
+                            <input type="submit" value="Submit Data" class="btn btn-success btn-form" name="submit_data" formaction="https://script.google.com/macros/s/AKfycbx_flOSjRU9FxHJUQsoML21a_lD3lKsZ2NuL93eGUEUhFgcdk7HsLSj41jOCdh42oMsvg/exec">
                         </div>
                     </div>
                 </form>
