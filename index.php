@@ -28,7 +28,7 @@
             ?>
 
             <div class="card-body user-card">
-                <form method="POST" action="<?php echo($_SERVER['PHP_SELF']); ?>">
+                <form method="POST" action="<?php echo($_SERVER['PHP_SELF']); ?>" id="frmSubmit">
                     <div class="row">
                         <div class="col-lg-6 intext">Name : </div>
                         <div class="col-lg-6"><input type="text" name="nameuser" id="" class="form-control" placeholder="Name" required></div>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-lg-2"></div>
                         <div class="col-lg-5">
-                            <input type="submit" value="Submit Data" class="btn btn-success btn-form" name="submit_data" formaction="https://script.google.com/macros/s/AKfycbx_flOSjRU9FxHJUQsoML21a_lD3lKsZ2NuL93eGUEUhFgcdk7HsLSj41jOCdh42oMsvg/exec">
+                            <input type="submit" value="Submit Data" class="btn btn-success btn-form" name="submit_data">
                         </div>
                     </div>
                 </form>
@@ -64,6 +64,26 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+    <script>
+        jQuery('#frmSubmit').on('submit', function(e) {
+        e.preventDefault();
+        jQuery('#msg').html('Please wait...');
+        jQuery('#btnSubmit').attr('disabled', true);
+        jQuery.ajax({
+            url: 'https://script.google.com/macros/s/AKfycbz7Ngeaorh7FXluqbl57f7tuzjyQZmC3earP7P03-QefwTDS0fNrRbXcReVONoMMjJ9hw/exec',
+
+            type: 'post',
+            data: jQuery('#frmSubmit').serialize(),
+
+            success: function(result) {
+
+                resend();
+
+            }
+        });
+    });
+    </script>
 
 </body>
 
