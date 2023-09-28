@@ -17,7 +17,7 @@
             <div class="card-header">
                 <h3>Data Send to GSheet and DB</h3>
             </div>
-            <div class="card-body">
+            <div class="card-body user-card">
                 <form action="" method="post">
                     <div class="row">
                         <div class="col-lg-6">Name : </div>
