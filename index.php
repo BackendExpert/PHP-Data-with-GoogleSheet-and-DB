@@ -32,8 +32,8 @@
                         <div class="col-lg-6"><input type="text" name="mobile" id="" class="form-control" placeholder="Mobile Number" required></div>
                     </div><br>
                     <div class="row">
-                        <div class="col-lg-6 intext">Email Address: </div>
-                        <div class="col-lg-6"><input type="email" name="nameuser" id="" class="form-control" placeholder="Email Address" required></div>
+                        <div class="col-lg-6 intext">Address: </div>
+                        <div class="col-lg-6"><textarea name="" id="" cols="30" rows="10"></textarea></div>
                     </div><br>
                     <div class="row">
                         <div class="col-lg-6 intext">Email Address: </div>
