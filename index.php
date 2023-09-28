@@ -18,7 +18,7 @@
                 <h3>Data Send to GSheet and DB</h3>
             </div>
             <div class="card-body user-card">
-                <form action="" method="post">
+                <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
                     <div class="row">
                         <div class="col-lg-6 intext">Name : </div>
                         <div class="col-lg-6"><input type="text" name="nameuser" id="" class="form-control" placeholder="Name" required></div>
