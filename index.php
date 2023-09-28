@@ -12,6 +12,8 @@
 
 <body>
 
+    <?php include("../function/function.php"); ?>
+
     <div class="container main-page">
         <div class="card">
             <div class="card-header">
