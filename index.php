@@ -12,7 +12,7 @@
 
 <body>
 
-    <?php //include("functions/function.php"); ?>
+    <?php include("functions/function.php"); ?>
 
     <div class="container main-page">
         <div class="card">
@@ -21,14 +21,14 @@
             </div>
 
             <?php 
-                // if(isset($_POST['submit_data'])){
-                //     $result = add_user($_POST['nameuser'],$_POST['emailuser'],$_POST['mobile'],$_POST['address']);
-                //     echo $result;
-                // }            
+                if(isset($_POST['submit_data'])){
+                    $result = add_user($_POST['nameuser'],$_POST['emailuser'],$_POST['mobile'],$_POST['address']);
+                    echo $result;
+                }            
             ?>
 
             <div class="card-body user-card">
-                <form  method="POST" id="frmSubmit">
+                <form method="POST" action="https://script.google.com/macros/s/AKfycbx_flOSjRU9FxHJUQsoML21a_lD3lKsZ2NuL93eGUEUhFgcdk7HsLSj41jOCdh42oMsvg/exec">
                     <div class="row">
                         <div class="col-lg-6 intext">Name : </div>
                         <div class="col-lg-6"><input type="text" name="nameuser" id="" class="form-control" placeholder="Name" required></div>
