@@ -21,7 +21,11 @@
                 <form action="" method="post">
                     <div class="row">
                         <div class="col-lg-6">Name : </div>
-                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6"><input type="text" name="nameuser" id="" class="form-control" placeholder="Name" required></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">Email : </div>
+                        <div class="col-lg-6"><input type="text" name="nameuser" id="" class="form-control" placeholder="Email Address" required></div>
                     </div>
                 </form>
             </div>
