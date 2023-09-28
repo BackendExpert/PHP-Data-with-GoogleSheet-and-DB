@@ -36,7 +36,9 @@
                         <div class="col-lg-6"><textarea name="" class="form-control form-address" placeholder="Address"></textarea></div>
                     </div><br>
                     <div class="row">
-                        <div class="col-lg-5"></div>
+                        <div class="col-lg-5">
+                            <input type="reset" value="Clear" class="btn btn-primary" >
+                        </div>
                         <div class="col-lg-2"></div>
                         <div class="col-lg-5"></div>
                     </div>
