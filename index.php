@@ -24,7 +24,7 @@
                         <div class="col-lg-6"><input type="text" name="nameuser" id="" class="form-control" placeholder="Name" required></div>
                     </div><br>
                     <div class="row">
-                        <div class="col-lg-6">Email Address: </div>
+                        <div class="col-lg-6 intext">Email Address: </div>
                         <div class="col-lg-6"><input type="text" name="nameuser" id="" class="form-control" placeholder="Email Address" required></div>
                     </div>
                 </form>
