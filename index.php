@@ -33,7 +33,7 @@
                     </div><br>
                     <div class="row">
                         <div class="col-lg-6 intext">Address: </div>
-                        <div class="col-lg-6"><textarea name="" class="form-control form-address" placeholder="Address"></textarea></div>
+                        <div class="col-lg-6"><textarea name="" class="form-control form-address" placeholder="Address" required></textarea></div>
                     </div><br>
                     <div class="row">
                         <div class="col-lg-5">
