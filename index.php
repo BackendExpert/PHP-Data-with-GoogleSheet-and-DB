@@ -10,9 +10,9 @@
 </head>
 <body>
     
-    <div class="container">
+    <div class="container main-page">
         <div class="card">
-            <div class="header">Hi all</div>
+            <div class="card-header">Hi all</div>
         </div>
     </div>
 
