@@ -37,10 +37,12 @@
                     </div><br>
                     <div class="row">
                         <div class="col-lg-5">
-                            <input type="reset" value="Clear" class="btn btn-primary" >
+                            <input type="reset" value="Clear" class="btn btn-secondary">
                         </div>
                         <div class="col-lg-2"></div>
-                        <div class="col-lg-5"></div>
+                        <div class="col-lg-5">
+                            <input type="submit" value="Submit Data" class="btn btn-success">
+                        </div>
                     </div>
                 </form>
             </div>
